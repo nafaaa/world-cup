@@ -120,9 +120,9 @@ ul {
 }
 .blog {
   background-color: #ffffff;
-  width: 312px;
-  height: 362px;
-  border-radius: 5px;
+  width: 95%;
+  height: 372px;
+  border-radius: 9px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 .blog a {
@@ -138,7 +138,7 @@ ul {
 }
 
 .blog img {
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 20px;
 }
 .blog p {
@@ -173,6 +173,12 @@ ul {
 }
 .view-button {
   visibility: hidden;
+}
+.blog .flags {
+  padding: 2px 40px;
+}
+.blog .flags img {
+  max-width: 60%;
 }
 
 /* Footer section css */
@@ -250,9 +256,10 @@ footer {
   margin-bottom: 20px;
   font-weight: 400;
   font-size: 10px;
-  color: rgb(22, 22, 22, 0.7) !important;
+  color: rgb(22, 22, 22, 0.7);
 }
 /* Media queries css */
+/* Media query css for mobile view */
 @media only screen and (max-width: 688px) {
   .banner {
     margin: 0 auto;
@@ -303,6 +310,9 @@ footer {
     width: 90%;
     margin: 0 auto;
   }
+  .blog {
+    height: 500px;
+  }
 
   footer {
     padding: 30px 0;
@@ -330,6 +340,8 @@ footer {
     padding: 10px;
   }
 }
+
+/* Media query css for tablet view */
 
 @media only screen and (min-width: 689px) and (max-width: 992px) {
   .banner {
@@ -377,6 +389,7 @@ footer {
   .blog {
     display: flex;
     flex-direction: column;
+    height: 500px;
   }
   .blog a {
     padding: 4px 18px;
